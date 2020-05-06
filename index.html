@@ -32,10 +32,10 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body data-spy="scroll" data-target="#menuResponsive">
-    <header class="sticky-top">
+    <header class="fixed-top">
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-dark text-uppercase">
-          <a href="./index.html" class="navbar-brand">Start Bootstrap</a>
+          <a href="#principal" class="navbar-brand">Start Bootstrap</a>
           <button
             class="navbar-toggler rounded"
             data-toggle="collapse"
@@ -69,6 +69,7 @@
     </header>
     <main
       class="container-fluid justify-content-center align-center text-center text-light"
+      id="principal"
     >
       <img src="./img/avataaars.svg" alt="" />
       <div class="text-uppercase h1">Start Bootstrap</div>
@@ -137,7 +138,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4 ml-auto">
             <p class="lead text-light">
               Freelancer is a free bootstrap theme created by Start Bootstrap.
               The download includes the complete source files including HTML,
@@ -145,7 +146,7 @@
               customization.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4 mr-auto">
             <p class="lead text-light">
               You can create your own custom avatar for the masthead, change the
               icon in the dividers, and add your email address to the contact
@@ -168,30 +169,34 @@
         <i class="fa fa-star h1" aria-hidden="true"></i>
       </div>
       <div class="container">
-        <form action="" class="form-control">
-          <div class="form-group">
-            <label for="Nombre" class="sr-only">Nombre: </label>
-            <input type="input" placeholder="Nombre" />
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <form action="">
+              <div class="form-group">
+                <label for="Nombre" class="sr-only">Nombre: </label>
+                <input type="input" placeholder="Nombre" />
+              </div>
+              <div class="form-group">
+                <label for="Email Adress" class="sr-only">Email Adress: </label>
+                <input type="email" placeholder="Email Adress" />
+              </div>
+              <div class="form-group">
+                <label for="Phone Number" class="sr-only">Phone Number: </label>
+                <input type="tel" placeholder="Phone Number" />
+              </div>
+              <div class="form-group">
+                <label for="Message" class="sr-only">Message: </label>
+                <textarea
+                  name="Message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary btn-lg">Send</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="Email Adress" class="sr-only">Email Adress: </label>
-            <input type="email" placeholder="Email Adress" />
-          </div>
-          <div class="form-group">
-            <label for="Email Adress" class="sr-only">Email Adress: </label>
-            <input type="tel" placeholder="Email Adress" />
-          </div>
-          <div class="form-group">
-            <label for="Message" class="sr-only">Message: </label>
-            <textarea
-              name="Message"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <button class="btn btn-primary btn-lg">Send</button>
-        </form>
+        </div>
       </div>
     </section>
   </body>
