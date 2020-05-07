@@ -25,23 +25,29 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://kit.fontawesome.com/22b0cc9e36.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body data-spy="scroll" data-target="#menuResponsive">
-    <header class="fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-md navbar-dark text-uppercase">
+    <header class="scrolling-navbar fixed-top">
+      <nav
+        class="titulo navbar navbar-expand-md navbar-dark text-uppercase p-3"
+      >
+        <div class="container">
           <a href="#principal" class="navbar-brand">Start Bootstrap</a>
           <button
-            class="navbar-toggler rounded"
+            class="btn btn-primary btn-lg navbar-toggler rounded"
             data-toggle="collapse"
             data-target="#menuResponsive"
           >
-            <div class="navbar-togger-icon">
+            <div class="navbar-togger-icon text-light">
               MENU <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
           </button>
@@ -64,15 +70,15 @@
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <main
       class="container-fluid justify-content-center align-center text-center text-light"
       id="principal"
     >
       <img src="./img/avataaars.svg" alt="" />
-      <div class="text-uppercase h1">Start Bootstrap</div>
+      <div class="titulo text-uppercase h1">Start Bootstrap</div>
       <i class="fa fa-star h1" aria-hidden="true"></i>
 
       <div class="h4">Graphic Artist - Web Designer - Illustrator</div>
@@ -134,7 +140,11 @@
         class="container titulo d-block text-uppercase text-center text-light"
       >
         <div class="h1">About</div>
-        <i class="fa fa-star h1" aria-hidden="true"></i>
+        <div>
+          <span class="solid"></span>
+          <i class="fa fa-star h1" aria-hidden="true"></i>
+          <span class="solid"></span>
+        </div>
       </div>
       <div class="container">
         <div class="row">
@@ -193,11 +203,52 @@
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button class="btn btn-primary btn-lg">Send</button>
+              <div class="form-group">
+                <button type="submit" class="submit btn btn-primary">
+                  Send
+                </button>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="row text-light text-center">
+          <div class="col-xs-1 col-md-4 mb-5 mb-md-0 h4">
+            <p class="titulo text-uppercase mb-3">Location</p>
+            <p>2215 John Daniel Drive</p>
+            <p>Clark, MO 65243</p>
+          </div>
+          <div class="col-xs-1 col-md-4 mb-5 mb-md-0 h4">
+            <p class="titulo text-uppercase mb-3">Around the web</p>
+            <div class="">
+              <button class="btn btn-outline-light rounded-circle mx-1">
+                <i class="fa fa-facebook text-center" aria-hidden="true"></i>
+              </button>
+              <button class="btn btn-outline-light rounded-circle mx-1">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </button>
+              <button class="btn btn-outline-light rounded-circle mx-1">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </button>
+              <button class="btn btn-outline-light rounded-circle mx-1">
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-xs-1 col-md-4 mb-5 mb-md-0 h4">
+            <p class="titulo text-uppercase mb-3">
+              About Freelancer
+            </p>
+            <p>
+              Freelance is a free to use, MIT licensed Bootstrap theme created
+              by Start Bootstrap.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
