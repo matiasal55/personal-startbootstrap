@@ -27,7 +27,7 @@
     ></script>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/index.css" />
     <link
@@ -37,7 +37,7 @@
     <script src="./js/index.js"></script>
   </head>
   <body data-spy="scroll" data-target="#menuResponsive">
-    <header class="scrolling-navbar fixed-top">
+    <header class="scrolling-navbar sticky-top">
       <nav class="navbar navbar-expand-md navbar-dark text-uppercase p-3">
         <div class="container">
           <a href="#principal" class="navbar-brand">Start Bootstrap</a>
@@ -81,7 +81,6 @@
       <img src="./img/avataaars.svg" alt="" />
       <div class="titulo text-uppercase h1">Start Bootstrap</div>
       <i class="fa fa-star h1" aria-hidden="true"></i>
-
       <div class="h4">Graphic Artist - Web Designer - Illustrator</div>
     </main>
     <section id="portfolio">
@@ -92,46 +91,424 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-4 p-3">
-            <img
-              class="img-fluid rounded"
-              src="./img/portfolio/cabin.png"
-              alt=""
-            />
+            <div
+              class="mostrarModal mx-auto"
+              data-toggle="modal"
+              data-target="#modal1"
+            >
+              <div
+                class="mostrarMenu-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="mostrarMenu-caption-content text-center text-light h1"
+                >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid rounded"
+                src="./img/portfolio/cabin.png"
+                alt=""
+              />
+            </div>
+            <div class="modal fade" id="modal1">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <button
+                    class="close ml-auto p-2"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <div class="modal-title text-uppercase mx-auto">
+                            <div class="container titulo d-block text-center">
+                              <div class="h1">Log cabin</div>
+                              <i class="fa fa-star h1" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <img
+                            src="./img/portfolio/cabin.png"
+                            class="img-fluid rounded p3"
+                            alt=""
+                          />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Mollitia neque assumenda ipsam nihil,
+                            molestias magnam, recusandae quos quis inventore
+                            quisquam velit asperiores, vitae? Reprehenderit
+                            soluta, eos quod consequuntur itaque. Nam.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer m-3">
+                    <button
+                      type="button"
+                      data-dismiss="modal"
+                      class="btn btn-primary mx-auto"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>Close Window
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-lg-4 p-3">
-            <img
-              class="img-fluid rounded"
-              src="./img/portfolio/cake.png"
-              alt=""
-            />
+            <div
+              class="mostrarModal mx-auto"
+              data-toggle="modal"
+              data-target="#modal2"
+            >
+              <div
+                class="mostrarMenu-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="mostrarMenu-caption-content text-center text-light h1"
+                >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid rounded"
+                src="./img/portfolio/cake.png"
+                alt=""
+              />
+            </div>
+            <div class="modal fade" id="modal2">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <button
+                    class="close ml-auto p-2"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <div class="modal-title text-uppercase mx-auto">
+                            <div class="container titulo d-block text-center">
+                              <div class="h1">Tasty cake</div>
+                              <i class="fa fa-star h1" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <img
+                            src="./img/portfolio/cake.png"
+                            class="img-fluid rounded p3"
+                            alt=""
+                          />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Mollitia neque assumenda ipsam nihil,
+                            molestias magnam, recusandae quos quis inventore
+                            quisquam velit asperiores, vitae? Reprehenderit
+                            soluta, eos quod consequuntur itaque. Nam.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer m-3">
+                    <button
+                      type="button"
+                      data-dismiss="modal"
+                      class="btn btn-primary mx-auto"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>Close Window
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-lg-4 p-3">
-            <img
-              class="img-fluid rounded"
-              src="./img/portfolio/circus.png"
-              alt=""
-            />
+            <div
+              class="mostrarModal mx-auto"
+              data-toggle="modal"
+              data-target="#modal3"
+            >
+              <div
+                class="mostrarMenu-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="mostrarMenu-caption-content text-center text-light h1"
+                >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid rounded"
+                src="./img/portfolio/circus.png"
+                alt=""
+              />
+            </div>
+            <div class="modal fade" id="modal3">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <button
+                    class="close ml-auto p-2"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <div class="modal-title text-uppercase mx-auto">
+                            <div class="container titulo d-block text-center">
+                              <div class="h1">Circus tent</div>
+                              <i class="fa fa-star h1" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <img
+                            src="./img/portfolio/circus.png"
+                            class="img-fluid rounded p3"
+                            alt=""
+                          />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Mollitia neque assumenda ipsam nihil,
+                            molestias magnam, recusandae quos quis inventore
+                            quisquam velit asperiores, vitae? Reprehenderit
+                            soluta, eos quod consequuntur itaque. Nam.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer m-3">
+                    <button
+                      type="button"
+                      data-dismiss="modal"
+                      class="btn btn-primary mx-auto"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>Close Window
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-lg-4 p-3">
-            <img
-              class="img-fluid rounded"
-              src="./img/portfolio/game.png"
-              alt=""
-            />
+            <div
+              class="mostrarModal mx-auto"
+              data-toggle="modal"
+              data-target="#modal4"
+            >
+              <div
+                class="mostrarMenu-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="mostrarMenu-caption-content text-center text-light h1"
+                >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid rounded"
+                src="./img/portfolio/game.png"
+                alt=""
+              />
+            </div>
+            <div class="modal fade" id="modal4">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <button
+                    class="close ml-auto p-2"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <div class="modal-title text-uppercase mx-auto">
+                            <div class="container titulo d-block text-center">
+                              <div class="h1">Controller</div>
+                              <i class="fa fa-star h1" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <img
+                            src="./img/portfolio/game.png"
+                            class="img-fluid rounded p3"
+                            alt=""
+                          />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Mollitia neque assumenda ipsam nihil,
+                            molestias magnam, recusandae quos quis inventore
+                            quisquam velit asperiores, vitae? Reprehenderit
+                            soluta, eos quod consequuntur itaque. Nam.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer m-3">
+                    <button
+                      type="button"
+                      data-dismiss="modal"
+                      class="btn btn-primary mx-auto"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>Close Window
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-lg-4 p-3">
-            <img
-              class="img-fluid rounded"
-              src="./img/portfolio/safe.png"
-              alt=""
-            />
+            <div
+              class="mostrarModal mx-auto"
+              data-toggle="modal"
+              data-target="#modal5"
+            >
+              <div
+                class="mostrarMenu-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="mostrarMenu-caption-content text-center text-light h1"
+                >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid rounded"
+                src="./img/portfolio/safe.png"
+                alt=""
+              />
+            </div>
+            <div class="modal fade" id="modal5">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <button
+                    class="close ml-auto p-2"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <div class="modal-title text-uppercase mx-auto">
+                            <div class="container titulo d-block text-center">
+                              <div class="h1">Locked safe</div>
+                              <i class="fa fa-star h1" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <img
+                            src="./img/portfolio/safe.png"
+                            class="img-fluid rounded p3"
+                            alt=""
+                          />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Mollitia neque assumenda ipsam nihil,
+                            molestias magnam, recusandae quos quis inventore
+                            quisquam velit asperiores, vitae? Reprehenderit
+                            soluta, eos quod consequuntur itaque. Nam.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer m-3">
+                    <button
+                      type="button"
+                      data-dismiss="modal"
+                      class="btn btn-primary mx-auto"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>Close Window
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-lg-4 p-3">
-            <img
-              class="img-fluid rounded"
-              src="./img/portfolio/submarine.png"
-              alt=""
-            />
+            <div
+              class="mostrarModal mx-auto"
+              data-toggle="modal"
+              data-target="#modal6"
+            >
+              <div
+                class="mostrarMenu-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="mostrarMenu-caption-content text-center text-light h1"
+                >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid rounded"
+                src="./img/portfolio/submarine.png"
+                alt=""
+              />
+            </div>
+            <div class="modal fade" id="modal6">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <button
+                    class="close ml-auto p-2"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <div class="modal-title text-uppercase mx-auto">
+                            <div class="container titulo d-block text-center">
+                              <div class="h1">Portfolio</div>
+                              <i class="fa fa-star h1" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <img
+                            src="./img/portfolio/submarine.png"
+                            class="img-fluid rounded p3"
+                            alt=""
+                          />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Mollitia neque assumenda ipsam nihil,
+                            molestias magnam, recusandae quos quis inventore
+                            quisquam velit asperiores, vitae? Reprehenderit
+                            soluta, eos quod consequuntur itaque. Nam.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer m-3">
+                    <button
+                      type="button"
+                      data-dismiss="modal"
+                      class="btn btn-primary mx-auto"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>Close Window
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

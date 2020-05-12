@@ -135,3 +135,30 @@ footer {
 .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
 }
+
+.mostrarModal {
+  cursor: pointer;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.fa-times {
+  color: #159a80;
+}
+
+.mostrarMenu-caption {
+  position: absolute;
+  background-color: #159a80;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  top: 0;
+  left: 0;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+@media (max-device-width: 768px) {
+}
